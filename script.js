@@ -48,6 +48,9 @@ btn.addEventListener("click", async () => {
   if (!data) {
     console.error("Error: No data to display."); // Debug log
     document.querySelector(".location").textContent = "Error fetching data!";
+    document.querySelector(".temp").textContent = ``;
+    document.querySelector(".feelsLike").textContent = ``;
+    document.querySelector(".description").textContent = ``;
     return;
   }
 
